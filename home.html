@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (India)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #global{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: black;
+            color: rgb(219, 222, 225);
+            display: flex;
+            font-size: 13px;
+            margin-left: -10px;
+            margin-top: -10px;
+            margin-right: -8px;
+        }
+        .globali{
+            margin-left: 50px;
+        }
+        .fa-apple{
+            margin-left: 200px;
+            font-size: 15px;
+        }
+        .fa-magnifying-glass,.fa-bag-shopping{
+            margin-left:50px;
+            font-size: 15px;
+        }
+        #local{
+            background-color: #1C1C1C;
+            color: white;
+            padding-left: 260px;
+            display: flex;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-left:-10px;  
+            margin-right: -8px;
+        }
+        #img1{
+            margin-left: -10px;
+            margin-right: -8px;
+        }
+        #bear{
+            z-index: -1;
+            position: relative;
+
+        }
+        #bear1{
+            display: block;
+            position: absolute;
+            left: 600px;
+            top: 400px;
+            color: white;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        #voice{
+            font-size: 50px;
+            color: white;
+            
+        }
+        #voice1{
+            margin-top: 20px;
+            position: absolute;
+            left: -20px;
+            font-weight: lighter;
+        }
+        #watch{
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border: 0px solid white;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            margin-top: 150px;
+            margin-left: 70px;
+        }
+        #apple{
+            z-index: -1;
+            position: relative;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+        #watch1{
+            color: white;
+            position: absolute;
+            top: 450px;
+            left: 400px;
+            font-size: 50px;
+        }
+        #logo{
+            font-size: 50px;
+        }
+        #series{
+            position: absolute;
+            top: 510px;
+            left: 690px;
+            color: white;
+            letter-spacing: 2px;
+        }
+        #double{
+            position: absolute;
+            font-size: 30px;
+            top: 550px;
+            left: 400px;
+            letter-spacing: 2px;
+            color: white;
+        }
+        
+           
+        #press{
+            position: absolute;
+            top: 610px;
+            left: 600px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border: 0px solid white;
+            border-radius: 50px;
+            letter-spacing: 2px;
+        }
+        #press1{
+            position: absolute;
+            top: 610px;
+            left: 770px;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            width: 100px;
+            border: 0px solid white;
+            border-radius: 50px;
+            letter-spacing: 2px;
+        
+        }
+        #iphone{
+            z-index: 1;
+            position: relative;
+            margin-top: 10px;
+            margin-left: -10px;
+        }
+        #phone{
+            color: white;
+            position: absolute;
+            top: 30px;
+            left: 600px;
+            font-size: 50px;
+        }
+        #titanium{
+            color: white;
+            position: absolute;
+            top: 90px;
+            left: 530px;
+           
+            font-size: 30px;
+        }
+        #learn{
+            color: white;
+            position: absolute;
+            font-size: 25px;
+            top: 660px;
+            left: 650px;
+           
+        }
+        #learn1{
+            color: white;
+            position: absolute;
+            font-size: 25px;
+            top: 660px;
+            left: 816px;
+            
+        }
+        #one{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            z-index: 1;
+            position: relative;
+        }
+        #one1{
+            position: absolute;
+            font-size: 40px;
+            top: 10px;
+            left: 300px;
+        }
+        #one2{
+            position: absolute;
+            font-size: 25px;
+            top: 60px;
+            left: 170px;
+        }
+        #one3{
+            position: absolute;
+            top: 98px;
+            left: 258px;
+            font-size: 25px;
+        }
+        #one4{
+            position: absolute;
+            top: 98px;
+            left: 423px;
+            font-size: 25px;
+        }
+        #one5{
+            position: absolute;
+            font-size: 40px;
+            top: 10px;
+            left: 1016px;
+        }
+        #one6{
+            position: absolute;
+            font-size: 25px;
+            top: 60px;
+            left: 981px;
+        }
+        #one7{
+            position: absolute;
+            top: 535px;
+            left:1012px;
+            font-size: 25px;
+        }
+        #one8{
+            position: absolute;
+            top: 535px;
+            left: 1175px;
+            font-size: 25px;
+        }
+
+        #two{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            z-index: 1;
+            position: relative;
+        }
+        #two1{
+            position: absolute;
+            font-size: 40px;
+            top: 10px;
+            left: 70px;
+        }
+        #two2{
+            position: absolute;
+            font-size: 19px;
+            top: 60px;
+            left: 333px;
+            color: orange;
+        }
+        #two3{
+            position: absolute;
+            top: 500px;
+            left: 258px;
+            font-size: 25px;
+        }
+        #two4{
+            position: absolute;
+            top: 535px;
+            left: 248px;
+            font-size: 25px;
+        }
+        #two5{
+            position: absolute;
+            font-size: 25px;
+            top: 535px;
+            left: 413px;
+        }
+        #two6{
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            top: 10px;
+            left: 1039px;
+        }
+        #two7{
+            position: absolute;
+            color: white;
+            top: 58px;
+            left:981px;
+            font-size: 25px;
+        }
+        #two8{
+            position: absolute;
+            top: 535px;
+            left: 1018px;
+            font-size: 25px;
+        }
+        #two9{
+            position: absolute;
+            top: 535px;
+            left: 1179px;
+            font-size: 25px;
+        }
+        #ap{
+            font-size: 40px;
+        }
+
+        #three{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            z-index: 1;
+            position: relative;
+        }
+        #three1{
+            position: absolute;
+            font-size: 40px;
+            top: -2px;
+            left: 346px;
+        }
+        #three2{
+            position: absolute;
+            font-size: 25px;
+            top: 47px;
+            left: 232px;
+        }
+        #three3{
+            position: absolute;
+            top: 535px;
+            left: 258px;
+            font-size: 25px;
+        }
+        #three4{
+            position: absolute;
+            top: 535px;
+            left: 423px;
+            font-size: 25px;
+        }
+        #three5{
+            position: absolute;
+            font-size: 40px;
+            top: 10px;
+            left: 842px;
+        }
+        #three6{
+            position: absolute;
+            font-size: 25px;
+            top: 60px;
+            left: 981px;
+        }
+        #three7{
+            position: absolute;
+            top: 535px;
+            left:982px;
+            font-size: 25px;
+        }
+        
+
+        #shop,#learn,#learn1,#one4,#one3,#one7,#one8,#two4,#two5,#two8,#two9,#three3,#three4,#three7{
+            color: #0066CC;
+        }
+        
+        #shop,#learn,#learn1,#one4,#one3,#one7,#one8,#two4,#two5,#two8,#two9,#three3,#three4,#three7:visited{
+            text-decoration-line: none  ;
+            color: #0066CC;
+        }
+        #shop,#learn,#learn1,#one4,#one3,#one7,#one8,#two4,#two5,#two8,#two9,#three3,#three4,#three7 :hover{
+            cursor: pointer;
+            
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav id="global">
+            <i class="fa-brands fa-apple"></i>
+            <div class="globali">Store</div>
+            <div class="globali">Mac</div>
+            <div class="globali">iPad</div>
+            <div class="globali">iPhone</div>
+            <div class="globali">Watch</div>
+            <div class="globali">AirPods</div>
+            <div class="globali">TV & Home</div>
+            <div class="globali">Entertainment</div>
+            <div class="globali">Accessories</div>
+            <div class="globali">Support</div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </nav>
+    </div>
+    <div>
+        <nav id="local">
+            <b>Save up to ₹8000.00 instantly on eligible products with HDFC Bank Credit Cards.* Plus No Cost EMI from most leading banks. <b>‡</b></b>
+            <b id="shop">&nbsp;Shop now ></b>
+        </nav>
+    </div>
+    <section id="bear">
+        <img id="img1" src="./1.jpg" alt="err" width="1521px" height="700px">
+        
+       <div id="bear1"> 
+        <b id="voice">The Lost Voice</b><br>
+        <b id="voice1">Personal Voice recreates your own voice on iPhone, so it's never lost.</b>
+        <button id="watch">Watch the film <i class="fa-regular fa-circle-play"></i></button>
+       </div> 
+    </section>
+
+    <section id="apple">
+        <img src="./apple.jpg" alt="err" width="1521px" height="700px">
+        <div id="watch1"><i id="logo" class="fa-brands fa-apple"></i> WATCH</div>
+        <div id="series">SERIES 9</div>
+        <div id="double">Double tap.A magical new way to use Apple Watch.</div>
+        <button id="press">Learn more</button><button id="press1">Buy</button>
+    </section>
+
+    <section id="iphone">
+        <img src="./iphone.jpg" alt="err" width="1521px" height="700px">
+        <div id="phone">iPhone 15 Pro</div>
+        <div id="titanium">Titanium.So strong.So light.So Pro.</div>
+        <div id="join"><div id="learn">Learn more ></div><div id="learn1"> Buy ></div></div>
+    </section>
+
+    <section id="one">
+        <div><img src="./mobile.jpg" alt="err" height="580px" width="741.6px"> </div>
+        <div><img src="./mac.jpeg" alt="err" height="580px" width="741.6px"></div>
+        <div id="one1">iPhone 15</div>
+        <div id="one2">New camera. New design. Newphoria</div>
+        <div id="one3">Learn more ></div><div id="one4">Buy ></div>
+        <div id="one5">MacBook Pro</div>
+        <div id="one6">Mind-blowing. Head-turning.</div>
+        <div id="one7">Learn more ></div><div id="one8">Buy ></div>
+    </section>
+
+    <section id="two">
+        <div><img src="./clock.jpg" alt="err" height="580px" width="741.6px"></div>
+        <div><img src="./airpods.jpg" alt="err" height="580px" width="741.6px"></div>
+        <div id="two1"><i id="ap" class="fa-brands fa-apple"></i> WATCH</div>
+        <div id="two2">ULTRA2</div>
+        <div id="two3">Next-level adventure.</div>
+        <div id="two4">Learn more ></div><div id="two5">Buy ></div>
+        <div id="two6">AirPods Pro</div>
+        <div id="two7">Adaptive Audio. Now playing.</div>
+        <div id="two8">Learn more ></div><div id="two9">Buy ></div>
+    </section>
+
+    <section id="three">
+        <div><img src="./ipad.jpg" alt="err" height="580px" width="741.6px"></div>
+        <div><img src="./trade.jpg" alt="err" height="580px" width="741.6px"></div>
+        <div id="three1">iPad</div>
+        <div id="three2">Loveable. Drawable. Magical.</div>
+        <div id="three3">Learn more ></div>
+        <div id="three4">Buy ></div>
+        <div id="three5"><i id="ap" class="fa-brands fa-apple"></i> Trade In</div>
+        <div id="three6">Upgrade and save. It's that easy.</div>
+        <div id="three7">See what your device is worth ></div>
+    </section>
+
+    
+</body>
+</html>
